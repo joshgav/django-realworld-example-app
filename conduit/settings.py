@@ -26,7 +26,8 @@ SECRET_KEY = '2^f+3@v7$v1f8yt0!s)3-1t$)tlp+xm17=*g))_xoi&&9m#2a&'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.azurewebsites.net'
+    '.azurewebsites.net',
+    'localhost',
 ]
 
 
@@ -89,7 +90,7 @@ WSGI_APPLICATION = 'conduit.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join('/var/azure/sqlite', 'db.sqlite3'),
     }
 }
 
