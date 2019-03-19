@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'conduit.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join('/var/azure/sqlite', 'db.sqlite3'),
+        'NAME': os.path.join('/appsvctmp', 'db.sqlite3'),
     }
 }
 
